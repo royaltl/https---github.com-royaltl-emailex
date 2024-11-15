@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+  color: #333;
+  display: flex; /* Center container horizontally and vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px; /* Increased padding for a spacious feel */
+  background: rgba(255, 255, 255, 0.95); /* Slightly more opaque white */
+  border-radius: 15px; /* Slightly larger radius */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add shadow transition */
+}
+
+/* Animation on hover */
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 50px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em; /* Larger title */
+  color: #5c6bc0; /* Title color */
+  margin-bottom: 20px;
+  font-family: 'Satisfy';/* Apply the new font */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  letter-spacing: 1px; /* Space out the letters */
+  line-height: 1.2; /* Improved line height for readability */
+  transition: transform 0.3s ease; /* Add transition for hover effect */
+}
+
+h1:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  color: #3f51b5; /* Change color on hover */
+}
+
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px; /* Increased padding for comfort */
+  margin-bottom: 15px;
+  border: 1px solid #5c6bc0; /* Border color */
+  border-radius: 8px; /* More rounded edges */
+  font-size: 1em;
+  transition: border 0.3s ease, box-shadow 0.3s ease; /* Transition for border color and shadow */
+}
+
+input[type="text"]:focus {
+  border-color: #3f51b5; /* Change border color on focus */
+  outline: none; /* Remove outline */
+  box-shadow: 0 0 5px rgba(63, 81, 181, 0.5); /* Shadow effect on focus */
+}
+
+button {
+  padding: 15px 25px; /* Increased button padding */
+  margin: 5px; /* Space between buttons */
+  border: none;
+  border-radius: 8px; /* More rounded edges */
+  background: linear-gradient(45deg, #8f94fb, #7a80f3);
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Transition for background, transform, and shadow */
+}
+
+button:hover {
+  background: linear-gradient(45deg, #3f51b5, #5c6bc0);
+  transform: translateY(-2px); /* Lift effect */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
+
+#emailsContainer {
+  margin-top: 20px;
+  padding: 20px; /* Increased padding for the container */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: rgba(249, 249, 249, 0.9); /* Slightly more opaque */
+  max-height: 300px;
+  overflow-y: auto;
+  transition: background 0.3s ease; /* Transition for background color */
+}
+
+#emailsContainer:hover {
+  background-color: rgba(249, 249, 249, 1); /* Full opacity on hover */
+}
+
+.hidden {
+  display: none;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2em;
+  color: #666;
+  animation: fadeIn 0.5s; /* Animation for loading text */
+}
+
+/* Keyframes for loading animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
